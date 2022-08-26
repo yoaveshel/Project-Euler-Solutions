@@ -4,3 +4,7 @@ palindrom n = maximum [x*y| x<- [min..max], y<-[x..max], isPallindrom (x*y)]
     where isPallindrom x = show x == reverse (show x)
           min = 10^(n-1)
           max = 10^n-1
+
+main :: IO ()
+main = do
+    print $ palindrom 3

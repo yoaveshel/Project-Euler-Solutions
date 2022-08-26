@@ -20,3 +20,6 @@ factorize2 x i
     | otherwise = factorize2 x (i+1)
     where
     p = primes!!i
+
+main = do
+    print $ maximum $ factorize 600851475143 []
